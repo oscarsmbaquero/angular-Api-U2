@@ -1,13 +1,14 @@
 .album {
-  
-    width: 200px;
+       
+    width: 220px;
     margin-right: 24px;
     border: 1px solid lightgrey;
     box-shadow: 3px 3px 5px 3px lightgrey;
     margin-bottom: 24px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    background-color: white;
+    background-color: burlywood;
+    
     //opacity: 0.5;
 
     &__name{
@@ -18,8 +19,9 @@
    
 
     &__image {
+        margin: 9px;
         width: 200px;
-        height: 300px;
+        height: 200px;
         object-fit: cover;
         
     }
@@ -27,8 +29,8 @@
     &__a {
         display: flex;
         justify-content: center;
-      
-        color:red;
+        text-decoration: none;  
+        color:black;
     }
 
    
