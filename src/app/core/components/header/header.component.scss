@@ -1,0 +1,17 @@
+
+*{
+    text-decoration: none;
+ }
+
+.header{
+
+    display:flex;
+    justify-content: space-around;
+    background-color: lightcoral;
+
+    &__a{
+
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
