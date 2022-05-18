@@ -7,10 +7,12 @@ import { AlbumListComponent } from './album-list.component';
 import { AlbumComponent } from './components/album/album.component';
 
 
+
 @NgModule({
   declarations: [
     AlbumListComponent,
     AlbumComponent,
+    
   ],
   imports: [
     CommonModule,

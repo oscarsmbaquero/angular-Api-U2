@@ -1,9 +1,17 @@
 
 
-<div class ="album"
+<!-- <div class ="album"
    *ngIf="cd">
    <img class="album__image"[src]="cd.image">
    <p class ="album__name">{{cd.name}}</p>
-   <!-- <p class ="album__name">{{cd.id}}</p> -->
    <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
-</div>
+</div> -->
+<div class="card"
+    *ngIf="cd">
+    <img class="album__image"[src]="cd.image" alt="...">
+     <div class="card-body">
+     <p class ="album__name">{{cd.year}}</p>
+     <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
+   </div>
+ </div>
+

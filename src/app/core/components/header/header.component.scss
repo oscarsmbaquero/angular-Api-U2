@@ -12,6 +12,14 @@
     &__a{
 
         color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    &__select{
+        background-color: lightcoral;
+        appearance: none;
+        border:none;
+        width: 60px;
+        color: black;
+        
     }
 }

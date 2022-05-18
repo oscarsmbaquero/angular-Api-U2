@@ -1,3 +1,4 @@
+import { AlbumsService } from './services/albums/albums.service';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,6 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
     CommonModule,
     RouterModule
     
+  ],
+  providers: [
+  AlbumsService
   ],
   exports: [
     HeaderComponent,
