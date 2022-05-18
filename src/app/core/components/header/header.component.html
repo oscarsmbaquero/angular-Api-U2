@@ -1,13 +1,19 @@
 <div class ="header">
-     <a class ="header__a"[routerLink]="['']">Home</a>
-     <select name="" id="" class="header__select" >
-      <option value="1">Select</option>
-      <option value="2">Components</option>
-      <option value="3">History</option>
-      <option value="4">Other</option>
-      <option><a class ="header__a"[routerLink]="['./list']">List</a></option>
-    </select>
-    <a class ="header__a"[routerLink]="['./list']">List</a> 
+    <!-- <a class ="header__a"[routerLink]="['']">Home</a>
+    <a class ="header__a"[routerLink]="['./list']">List</a>  -->
+    <a 
+        [ngStyle]="{ 'margin-right': '10px'}"
+        [routerLink]="['']"
+        [ngClass]="{
+            'link--active': selectedRoute === ''
+        }"
+    >Home</a>
+    <a
+        [routerLink]="['/list']"
+        [ngClass]="{
+            'link--active': selectedRoute === 'list'
+        }"
+    >Lista Albúms</a>
   
   </div>
 

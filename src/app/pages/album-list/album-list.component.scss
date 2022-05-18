@@ -1,6 +1,10 @@
+@import '/src/styles/0-base/variables.scss';
+
+
 .album-list {
     display: flex;
     justify-content: space-around;
+    //background-color: var(--primary-color);
     flex-wrap: wrap;
     padding: 24px;
     justify-content: center;
