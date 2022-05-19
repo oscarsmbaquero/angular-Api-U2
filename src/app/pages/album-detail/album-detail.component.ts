@@ -1,5 +1,6 @@
 import { album } from './../album-list/album-list.config';
-import { IAlbum } from './../album-list/models/gallery-models';
+//import { IAlbum } from './../album-list/models/gallery-models';
+import { IAlbum } from '../album-list/models/gallery-models';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

@@ -15,7 +15,8 @@ export class AlbumsService {
   }
 
   public getAlbums():Observable<IAlbum[]> {
-    return this.httpClient.get<IAlbum[]>('https://motogp-oscar.herokuapp.com/circuits');
+    //return this.httpClient.get<IAlbum[]>('https://motogp-oscar.herokuapp.com/circuits');
+    return this.httpClient.get<IAlbum[]>('https://62852cc03060bbd347460bff.mockapi.io/albums');
     //return this.httpClient.get<IAlbum[]>('https://breakingbadapi.com/api/');
 
 

@@ -1,14 +1,14 @@
 <div class ="header">
     <!-- <a class ="header__a"[routerLink]="['']">Home</a>
     <a class ="header__a"[routerLink]="['./list']">List</a>  -->
-    <a 
+    <a class="header__a"
         [ngStyle]="{ 'margin-right': '10px'}"
         [routerLink]="['']"
         [ngClass]="{
             'link--active': selectedRoute === ''
         }"
     >Home</a>
-    <a
+    <a class="header__a"
         [routerLink]="['/list']"
         [ngClass]="{
             'link--active': selectedRoute === 'list'
