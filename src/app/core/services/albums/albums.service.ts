@@ -3,6 +3,7 @@ import { IAlbum } from '../models/album-model';
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,10 +17,14 @@ export class AlbumsService {
 
   public getAlbums():Observable<IAlbum[]> {
     //return this.httpClient.get<IAlbum[]>('https://motogp-oscar.herokuapp.com/circuits');
-    return this.httpClient.get<IAlbum[]>('https://62852cc03060bbd347460bff.mockapi.io/albums');
-    //return this.httpClient.get<IAlbum[]>('https://breakingbadapi.com/api/');
+    //return this.httpClient.get<IAlbum[]>('https://62852cc03060bbd347460bff.mockapi.io/albums');
+    return this.httpClient.get<IAlbum[]>(`${environment.apiUrl}albums`);
 
+    //return this.httpClient.get<IAlbum[]>('https://breakingbadapi.com/api/');    
+  }
 
+  public getProductById(id: string): Observable<IAlbum> {
+    return this.httpClient.get<IAlbum>(`https://62852cc03060bbd347460bff.mockapi.io/albums/${id}`);
     
   }
 }

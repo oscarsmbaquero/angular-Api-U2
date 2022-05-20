@@ -10,8 +10,9 @@
     *ngIf="cd">
     <img class="album__image"[src]="cd.image" alt="...">
      <div class="card-body">
-     <p class ="album__name">{{cd.name}}</p>
-     <p class ="album__name">{{cd.year}}</p>
+     <p class ="album__name">{{cd.name | uppercase}}</p>
+     <p class ="album__name">{{cd.year }}</p>
+     <!-- <p class ="album__name">{{cd.songs}}</p> -->
      <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
    </div>
  </div>

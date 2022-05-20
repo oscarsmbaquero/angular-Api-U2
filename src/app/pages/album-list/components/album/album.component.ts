@@ -1,4 +1,5 @@
-import { IAlbum } from './../../models/gallery-models';
+//import { IAlbum } from './../../models/gallery-models';
+import { IAlbum } from './../../../../../app/core/services/models/album-model';
 import { Component, Input, OnInit } from '@angular/core';
 
 

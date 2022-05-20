@@ -1,7 +1,7 @@
 export const album  =[
     {
     "id":"1",
-    "name": "The Joshua Tree",
+    "name": "Tu puta madre",
     "image": "https://m.media-amazon.com/images/I/9192-4t9lfL._SL1500_.jpg",
     "year": "1987"
     },

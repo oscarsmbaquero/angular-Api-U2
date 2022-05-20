@@ -1,5 +1,19 @@
 .album__image{
-    margin: 50px;
+    margin-left: 500px;
+    margin-bottom: 200px;
     width: 300px;
     height: 300px;
+    flex-direction: center;
+}
+.album__name{
+    color:red;
+    margin: 50px;
+}
+
+.album__div{
+    display:flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }

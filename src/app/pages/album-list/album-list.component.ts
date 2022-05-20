@@ -1,6 +1,8 @@
 import { AlbumsService } from './../../core/services/albums/albums.service';
+
 //import { album } from './album-list.config';
-import { IAlbum } from './models/gallery-models';
+//import { IAlbum } from './models/gallery-models';
+import { IAlbum } from '../../../app/core/services/models/album-model';
 import { Component, OnInit } from '@angular/core';
 //import { AlbumsService } from 'src/app/core/services/albums/albums.service';
 

@@ -1,10 +1,13 @@
-<p>album-detail works!</p>
 
 
-<div *ngIf="currentAlbum">
-    <p>{{currentAlbum.name}}</p>
-    <!-- <p>{{currentAlbum.songs}}</p> -->
+
+<div class="album__div" *ngIf="currentAlbum">
     <img class="album__image"[src]="currentAlbum.image">
+    <p class="album__name">{{currentAlbum.name}}</p>
+    <p class="album__name">{{currentAlbum.year}}</p>
+
+    <!-- <p class="album__name">{{currentAlbum.songs}}</p> -->
+    
    
 </div>
 
