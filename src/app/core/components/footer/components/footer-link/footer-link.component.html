@@ -1,0 +1,6 @@
+<div class ="footer-link"
+    *ngIf="socialNetwork">
+        <img class="footer-link__image"[src]="socialNetwork.image">     
+        <a href="{{socialNetwork.url}}" class="footer-link__name">{{socialNetwork.name}}</a>
+</div>
+

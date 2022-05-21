@@ -5,14 +5,16 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AlbumsService } from './services/albums/albums.service';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { FooterLinkComponent } from './components/footer/components/footer-link/footer-link.component'; 
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    FooterLinkComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,6 @@ import { HttpClientModule } from '@angular/common/http';
     
   ],
   providers: [
-  //AlbumsService,
   AlbumsService,
   
   ],

@@ -1,0 +1,38 @@
+// width: 30px;
+// height: 30px;
+
+.footer-link {
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // display: flex;   
+    //  justify-content: space-between;
+    // align-items: center;
+    // flex-wrap: wrap;
+    //background-color: #b8b4b1;
+    margin-top: 14px;
+
+    &__image{
+         width: 30px;
+         height: 30px;
+    }
+    &__social {
+        display: flex;
+        flex-direction: row;
+        //background-color: red;       
+       justify-content: space-around;
+     }
+
+     &__name {
+       color:white;
+       text-align: baseline;
+       text-decoration: none;
+     }
+  }
+  
+ 
+  
+
+  
+  
+  

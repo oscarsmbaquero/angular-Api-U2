@@ -6,19 +6,16 @@
    <p class ="album__name">{{cd.name}}</p>
    <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
 </div> -->
-<div class="card"
+<div class="album"
     *ngIf="cd">
-    <img class="album__image"[src]="cd.image" alt="...">
-     <div class="card-body">
-     <p class ="album__name">{{cd.name | uppercase}}</p>
-     <p class ="album__name">{{cd.year }}</p>
-     <button
-     class="product__delete"
-     *ngIf="cd"
-     (click)="onDelete()"
- >Eliminar</button>
-     <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
-     
-   </div>
+      <img class="album__image"[src]="cd.image" alt="...">
+      <div class="album__info">
+          <p class ="album__name">{{cd.name | uppercase}}</p>
+          <p class ="album__name">{{cd.year }}</p>
+          <button class="album__delete"
+          *ngIf="cd"
+          (click)="onDelete()">Eliminar</button>
+          <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>          
+      </div>
  </div>
 

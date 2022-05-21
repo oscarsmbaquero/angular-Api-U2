@@ -1,3 +1,5 @@
+import { networks} from './footer-list-config';
+import { Isocial } from './models/footer-models';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  //public socialNetworks: Isocial[] = networks as Isocial[];
+  public socialNetworks: Isocial[] = networks as Isocial[];
 
   constructor() { }
 
