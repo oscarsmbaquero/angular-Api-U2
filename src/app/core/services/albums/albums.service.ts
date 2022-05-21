@@ -24,7 +24,11 @@ export class AlbumsService {
   }
 
   public getProductById(id: string): Observable<IAlbum> {
-    return this.httpClient.get<IAlbum>(`https://62852cc03060bbd347460bff.mockapi.io/albums/${id}`);
+    return this.httpClient.get<IAlbum>(`${environment.apiUrl}/albums/${id}`);
     
+  }
+
+  public deleteProduct(id: string): Observable<IAlbum> {
+    return this.httpClient.delete<IAlbum>( `${environment.apiUrl}albums/${id}`);
   }
 }

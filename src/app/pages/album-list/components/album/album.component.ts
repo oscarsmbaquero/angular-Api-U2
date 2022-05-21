@@ -1,6 +1,6 @@
 //import { IAlbum } from './../../models/gallery-models';
 import { IAlbum } from './../../../../../app/core/services/models/album-model';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter,Output } from '@angular/core';
 
 
 @Component({
@@ -10,13 +10,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AlbumComponent implements OnInit {
 
-  @Input() public cd?: IAlbum
+  @Input() public cd?: IAlbum;
+  @Output() public delete: EventEmitter<void> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.cd);
-    
+    console.log(this.cd);    
   }
+  public onDelete() {
+    this.delete.emit();
+  }
+
+ 
 
 }

@@ -1,19 +1,42 @@
-.album__image{
-    margin-left: 500px;
-    margin-bottom: 200px;
-    width: 300px;
-    height: 300px;
-    flex-direction: center;
-}
-.album__name{
-    color:red;
-    margin: 50px;
-}
-
 .album__div{
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vw;
+   
+    
+ 
     width: 100%;
     height: 100%;
-    background-color: white;
+    //background-color: white;
 }
+
+
+
+
+
+
+.album__image{
+    // margin-left: 500px;
+    // margin-bottom: 200px;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 100px;
+    // flex-direction: center;
+}
+.album__name{
+    
+    font-size: 33px;
+    
+    margin-left: 175px;
+     margin-bottom: 20px;
+     color:red;
+    &--year{
+        
+        margin-left:210px;
+        margin-bottom: 100px;
+    }
+   
+}
+

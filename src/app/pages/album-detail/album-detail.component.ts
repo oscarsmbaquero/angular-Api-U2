@@ -13,8 +13,10 @@ import { AlbumsService } from './../../core/services/albums/albums.service';
 })
 export class AlbumDetailComponent implements OnInit {
   //public currentAlbum$?: Observable<IAlbum>;
+  
   //public album: IAlbum[]=album as IAlbum[];
   public currentAlbum?: IAlbum;
+  
 
   constructor(
     private activatedRoute: ActivatedRoute,

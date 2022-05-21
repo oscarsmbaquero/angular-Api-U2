@@ -3,6 +3,7 @@
 <div class="album-list">
     <app-album *ngFor="let cd of album"
      [cd]="cd"
+     (delete)="onDelete(cd.id)"
     ></app-album>
  
  </div>

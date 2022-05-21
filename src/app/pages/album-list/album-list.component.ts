@@ -4,6 +4,7 @@ import { AlbumsService } from './../../core/services/albums/albums.service';
 //import { IAlbum } from './models/gallery-models';
 import { IAlbum } from '../../../app/core/services/models/album-model';
 import { Component, OnInit } from '@angular/core';
+
 //import { AlbumsService } from 'src/app/core/services/albums/albums.service';
 
 @Component({
@@ -24,11 +25,26 @@ export class AlbumListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.albumsService.getAlbums().subscribe((album) =>{
+    this.getAlbums();
+    // this.albumsService.getAlbums().subscribe((album) =>{
 
+    //   this.album = album;
+    //   console.log(this.album);
+    // })
+  }
+
+  public onDelete(id: string) {
+    this.albumsService.deleteProduct(id).subscribe((album) => {
+      console.log('Eliminado!', album);
+      this.getAlbums();
+    });
+  }
+
+  private getAlbums() {
+    this.albumsService.getAlbums().subscribe((album) => {
       this.album = album;
-      console.log(this.album);
-    })
+      //this.filteredProducts = products;
+    });
   }
 
 

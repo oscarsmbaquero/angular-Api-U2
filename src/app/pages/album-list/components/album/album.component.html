@@ -12,8 +12,13 @@
      <div class="card-body">
      <p class ="album__name">{{cd.name | uppercase}}</p>
      <p class ="album__name">{{cd.year }}</p>
-     <!-- <p class ="album__name">{{cd.songs}}</p> -->
+     <button
+     class="product__delete"
+     *ngIf="cd"
+     (click)="onDelete()"
+ >Eliminar</button>
      <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
+     
    </div>
  </div>
 
