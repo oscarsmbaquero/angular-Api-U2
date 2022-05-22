@@ -10,25 +10,44 @@ import { environment } from 'src/environments/environment';
 })
 export class AlbumsService {
 
-  constructor(private httpClient: HttpClient) { 
-
+  constructor(private httpClient: HttpClient) {
 
   }
-
   public getAlbums():Observable<IAlbum[]> {
-    //return this.httpClient.get<IAlbum[]>('https://motogp-oscar.herokuapp.com/circuits');
-    //return this.httpClient.get<IAlbum[]>('https://62852cc03060bbd347460bff.mockapi.io/albums');
     return this.httpClient.get<IAlbum[]>(`${environment.apiUrl}albums`);
-
-    //return this.httpClient.get<IAlbum[]>('https://breakingbadapi.com/api/');    
   }
-
+  /**
+   * Funcion que devuelve los Albums por Id
+   * @param id 
+   *
+   */
   public getProductById(id: string): Observable<IAlbum> {
-    return this.httpClient.get<IAlbum>(`${environment.apiUrl}/albums/${id}`);
-    
+    return this.httpClient.get<IAlbum>(`${environment.apiUrl}albums/${id}`);
   }
-
-  public deleteProduct(id: string): Observable<IAlbum> {
+   /**
+    * Función para eliminar Album
+    * @param id  id del album
+    *
+    */
+  public deleteAlbum(id: string): Observable<IAlbum> {
     return this.httpClient.delete<IAlbum>( `${environment.apiUrl}albums/${id}`);
   }
-}
+
+  public addAlbum( body:IAlbum): Observable<IAlbum> {
+    return this.httpClient.post<IAlbum>(
+      `${environment.apiUrl}albums`, 
+      body
+    );
+
+  }
+
+  public editAlbum(id: string, body: IAlbum): Observable<IAlbum> {
+    return this.httpClient.put<IAlbum>(
+      `${environment.apiUrl}albums/${id}`,
+      body
+    );
+  }
+
+  
+  }
+

@@ -19,9 +19,17 @@ const routes: Routes = [
    loadChildren: () => import('src/app/pages/album-detail/album-detail.module').then(m => m.AlbumDetailModule)
   },
   {
-    path: "**",
-    redirectTo:''//redirecciona al home y elimna la ruta erronea del usuario
+    path:"create-product",
+    loadChildren: () => import('src/app/pages/create-product/create-product.module').then(m => m.CreateProductModule)
    },
+   {
+    path:"edit-product/:id",
+    loadChildren: () => import('src/app/pages/edit-product/edit-product.module').then(m => m.EditProductModule)
+   },
+  // {
+  //   path: "**",
+  //   redirectTo:''//redirecciona al home y elimna la ruta erronea del usuario
+  //  },
 
 ];
 

@@ -13,6 +13,7 @@ import { AlbumComponent } from './components/album/album.component';
   declarations: [
     AlbumListComponent,
     AlbumComponent,
+   
     
   ],
   imports: [
