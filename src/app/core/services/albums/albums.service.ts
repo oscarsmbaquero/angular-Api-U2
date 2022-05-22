@@ -1,4 +1,4 @@
-//import { IAlbum } from './../../../pages/album-list/models/gallery-models';
+
 import { IAlbum } from '../models/album-model';
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';

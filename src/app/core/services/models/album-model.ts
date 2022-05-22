@@ -5,7 +5,7 @@ export interface IAlbum{
     name: string;
     image: string;
     year: string;
-    songs:[];
+    //songs:[];
 
 
 }

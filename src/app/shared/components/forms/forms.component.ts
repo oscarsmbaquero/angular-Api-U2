@@ -1,7 +1,7 @@
-import { album } from './../../../pages/album-list/album-list.config';
-//import { AlbumsService } from './../../../core/services/albums/albums.service';
-import { IAlbum } from './../../../pages/album-list/models/gallery-models';
+
+//import { IAlbum } from './../../../pages/album-list/models/gallery-models';
 import { Component, OnInit, Input } from '@angular/core';
+import { IAlbum } from 'src/app/core/services/models/album-model';
 import { Router } from '@angular/router';
 import { AlbumsService } from 'src/app/core/services/albums/albums.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -28,12 +28,12 @@ export class FormsComponent implements OnInit {
 
   ngOnInit(): void {
     //console.log(this.album);
-    this.albumForm=this.formBuilder.group({
-      id: new FormControl(this.album ? this.album.id : '',[Validators.required]),
+    this.albumForm = this.formBuilder.group({
+      // id: new FormControl(this.album ? this.album.id : '',[Validators.required]),
       name : new FormControl(this.album ? this.album.name : '',[Validators.required]),
-      image: new FormControl(this.album ? this.album.image : '', [Validators.required]),
-      year: new FormControl(this.album ? this.album.year : '', [Validators.required]),
-    })
+      image: new FormControl(this.album ? this.album.image : '',[Validators.required]),
+      year: new FormControl(this.album ? this.album.year : '',[Validators.required]),
+    });
     
   }
 

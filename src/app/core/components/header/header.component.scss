@@ -4,12 +4,13 @@
 .header {
     top: 0;
     position: fixed;
+    padding: 3px;
     display: flex;
     width: 100%;
     height: 40px;
     justify-content: space-around;
     background-color: whitesmoke;
-    background-color: global-variable-exists(--primary-color);
+    //background-color: global-variable-exists(--primary-color);
     margin-bottom: 10px;
 
     &__a{
@@ -20,9 +21,18 @@
 
     &__a:hover{
         background-color: black;
-        color:aquamarine
+        color:whitesmoke;
         }
 }
+
+.photo{
+    width: 34px;
+}
+
+.photo:hover {
+    transform: rotate(360deg);
+      transition-duration: 2s;
+  }
 .link--active {
     font-weight: bold;
     background-color:(global-variable-exists(--primary-color));
