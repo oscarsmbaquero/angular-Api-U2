@@ -1,7 +1,14 @@
 
-
-<div class="album-list">
-    <app-album *ngFor="let cd of album"
+<div class="filter">
+    <label class="filter__label">Filtrar</label>
+    <input [(ngModel)]="filterValue" class="filter__input">
+</div>
+<!-- <div>
+    <input  type="number"[(ngModel)]="page">
+</div> -->
+<div *ngIf="album"
+       class="album-list"
+       ><app-album *ngFor="let cd of (album | filter:filterValue)"
      [cd]="cd"
      (delete)="onDelete(cd.id)"
     ></app-album>

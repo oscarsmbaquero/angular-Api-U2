@@ -11,7 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class AlbumListComponent implements OnInit {
 
   public album?: IAlbum[];
-  public filteredProducts?: IAlbum[];
+  public filterValue: string = "";
+  public page: number = 0;
   
   constructor(
     private albumsService : AlbumsService,
@@ -25,7 +26,7 @@ export class AlbumListComponent implements OnInit {
 
   public onDelete(id: string) {
     this.albumsService.deleteAlbum(id).subscribe((album) => {
-      //console.log('Eliminado!', album);
+      console.log('Eliminado!', album);
       this.getAlbums();
     });
   }

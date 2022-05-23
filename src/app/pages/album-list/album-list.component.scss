@@ -6,7 +6,28 @@
     justify-content: space-around;
     //background-color: var(--primary-color);
     flex-wrap: wrap;
-    padding: 24px;
+    //padding: 24px;
     justify-content: center;
-    margin-top: 40px;
+    //margin-top: 40px;
+}
+
+.filter{
+    display:flex;
+    padding :20px;
+    justify-content: center;
+    align-items: center;
+    //color:white;
+    border-color: aliceblue;
+
+  &__input{
+    margin-left: 15px;
+  }
+  &__label{
+      color:white
+
+  }
+  &__label:hover{
+    color:red;
+
+}
 }

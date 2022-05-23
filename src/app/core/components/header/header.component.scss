@@ -3,7 +3,7 @@
 
 .header {
     top: 0;
-    position: fixed;
+    //position: fixed;
     padding: 3px;
     display: flex;
     width: 100%;
@@ -12,6 +12,7 @@
     background-color: whitesmoke;
     //background-color: global-variable-exists(--primary-color);
     margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
     &__a{
     color: global-variable-exists(--primary-color);
@@ -23,6 +24,8 @@
         background-color: black;
         color:whitesmoke;
         }
+
+
 }
 
 .photo{

@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FilterPipe } from './pipes/filter.pipe';
+import { PagesPipe } from './pipes/pages.pipe';
 
 
 
 @NgModule({
   declarations: [
-   FormsComponent
+   FormsComponent,
+   FilterPipe,
+   PagesPipe
   ],
   imports: [
     CommonModule,
@@ -17,7 +21,9 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
-  FormsComponent
+  FormsComponent,
+  FilterPipe,
+  PagesPipe
 
   ]
 })

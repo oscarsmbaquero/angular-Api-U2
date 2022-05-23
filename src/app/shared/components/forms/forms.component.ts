@@ -27,9 +27,11 @@ export class FormsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //console.log(this.album);
     this.albumForm = this.formBuilder.group({
       // id: new FormControl(this.album ? this.album.id : '',[Validators.required]),
+      // name: ['',Validators.required],
+      // image: ['',Validators.required],
+      // year: ['',Validators.required],
       name : new FormControl(this.album ? this.album.name : '',[Validators.required]),
       image: new FormControl(this.album ? this.album.image : '',[Validators.required]),
       year: new FormControl(this.album ? this.album.year : '',[Validators.required]),
@@ -39,7 +41,10 @@ export class FormsComponent implements OnInit {
 
 
   public saveAlbum(){
-    const formValue = this.albumForm?.value;
+
+    console.log('Entro');
+    const formValue = this.albumForm?.value;//vslor del formulario
+    console.log(formValue);
     const  albumAdd$ = this.editMode && this.album
     ? this.albumsService.editAlbum(this.album.id, formValue)
     : this.albumsService.addAlbum(formValue);
