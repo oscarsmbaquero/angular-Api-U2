@@ -4,12 +4,15 @@
 <div class="album__div" *ngIf="currentAlbum">
     <img class="album__image"[src]="currentAlbum.image">
     <p class="album__name">{{currentAlbum.name}}</p>
-    <p class="album__name">{{currentAlbum.year}}</p>   
+    <p class="album__name">{{currentAlbum.year}}</p>
+    <div  *ngFor="let song of songs">
+        <p class="album__name">{{song}}</p>
+    
+    
+    
+    </div>   
+    
 </div>
 
-<div>
 
-
-
-</div>
 

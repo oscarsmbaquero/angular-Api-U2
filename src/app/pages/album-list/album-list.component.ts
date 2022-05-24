@@ -12,6 +12,7 @@ export class AlbumListComponent implements OnInit {
 
   public album?: IAlbum[];
   public filterValue: string = "";
+  //public pageFilter: number =0;
   public page: number = 0;
   
   constructor(

@@ -2,17 +2,18 @@
 <div class="filter">
     <label class="filter__label">Filtrar</label>
     <input [(ngModel)]="filterValue" class="filter__input">
+    <input type="number" [(ngModel)]="page" class="filter__input">
 </div>
-<!-- <div>
-    <input  type="number"[(ngModel)]="page">
-</div> -->
-<div *ngIf="album"
-       class="album-list"
-       ><app-album *ngFor="let cd of (album | filter:filterValue)"
-     [cd]="cd"
-     (delete)="onDelete(cd.id)"
-    ></app-album>
- 
- </div>
+
+<div *ngIf="album"class="album-list"
+    ><app-album *ngFor="let cd of album
+      |filter : filterValue
+      | pages: page
+      "
+      [cd]="cd"
+      (delete)="onDelete(cd.id)"
+      ></app-album>
+
+</div>
 
  
