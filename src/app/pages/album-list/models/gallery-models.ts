@@ -1,11 +1,11 @@
-export interface IAlbum{
+// export interface IAlbum{
 
-    id: string;
-    name: string;
-    image: string;
-    year: string;
-    //songs:[];
+//     id: string;
+//     name: string;
+//     image: string;
+//     year: string;
+//     //songs:[];
     
 
 
-}
+// }

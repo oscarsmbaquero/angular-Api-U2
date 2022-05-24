@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 const PageLimit = 6
 
 @Pipe({
-  name: 'pages'
+  name: 'pages',
+  pure:false
 })
 export class PagesPipe implements PipeTransform {
 

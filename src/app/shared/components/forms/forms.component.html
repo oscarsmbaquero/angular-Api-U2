@@ -1,19 +1,9 @@
 <form
    *ngIf="albumForm"
    [formGroup]="albumForm"
-   (sumbit)="saveAlbum()"
+   (submit)="saveAlbum()"
    class="form"
    >
-
-
-    <!-- <div class="field-container">
-        <input class="form__input" placeholder="Id" formControlName="id">
-        <p 
-          *ngIf="!albumForm.get('id')?.valid && albumForm.get('id')?.dirty"
-          class="input-error">
-          El Id es requerido
-        </p>
-    </div> -->
     <div class="field-container">    
         <input class="form__input" placeholder="Name" formControlName="name">
         <p 

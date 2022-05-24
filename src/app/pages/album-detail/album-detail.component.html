@@ -1,18 +1,26 @@
 
 
 
-<div class="album__div" *ngIf="currentAlbum">
-    <img class="album__image"[src]="currentAlbum.image">
-    <p class="album__name">{{currentAlbum.name}}</p>
-    <p class="album__name">{{currentAlbum.year}}</p>
-    <div  *ngFor="let song of songs">
-        <p class="album__name">{{song}}</p>
+    <div  
+     *ngIf="currentAlbum"
+      class="album">
+         <div  class="album__info">
+            <img class="album__image"[src]="currentAlbum.image">
+         </div>
+         <div class="album__info">
+            <div >  
+                <p class="album__title">{{currentAlbum.name}}</p>
+                <p class="album__year">{{currentAlbum.year}}</p>
+            </div>
+            <div class="album__songs" *ngFor="let song of currentAlbum.songs">
+                 <p class="album__song">{{song.title}}</p>    
+            </div>
+        </div>
+    </div>
+   
     
     
-    
-    </div>   
-    
-</div>
+
 
 
 

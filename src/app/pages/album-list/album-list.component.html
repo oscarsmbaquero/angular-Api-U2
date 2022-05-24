@@ -8,7 +8,7 @@
 <div *ngIf="album"class="album-list"
     ><app-album *ngFor="let cd of album
       |filter : filterValue
-      | pages: page
+      |pages: page
       "
       [cd]="cd"
       (delete)="onDelete(cd.id)"

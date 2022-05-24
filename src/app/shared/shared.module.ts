@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FilterPipe } from './pipes/filter.pipe';
 import { PagesPipe } from './pipes/pages.pipe';
+import { DatesPipe } from './pipes/pipeDates/dates.pipe';
 
 
 
@@ -12,7 +13,8 @@ import { PagesPipe } from './pipes/pages.pipe';
   declarations: [
    FormsComponent,
    FilterPipe,
-   PagesPipe
+   PagesPipe,
+   DatesPipe
   ],
   imports: [
     CommonModule,

@@ -49,7 +49,7 @@ export class FormsComponent implements OnInit {
     ? this.albumsService.editAlbum(this.album.id, formValue)
     : this.albumsService.addAlbum(formValue);
     albumAdd$.subscribe((album) => {
-      this.router.navigate(['list']);
+    this.router.navigate(['list']);
     });
 
 
