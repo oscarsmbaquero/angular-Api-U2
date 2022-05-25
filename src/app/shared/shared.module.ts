@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FilterPipe } from './pipes/filter.pipe';
 import { PagesPipe } from './pipes/pages.pipe';
+import { PaginationService } from '../core/services/pagination.service';
 
 
 

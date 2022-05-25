@@ -1,3 +1,4 @@
+import { PaginationService } from './services/pagination.service';
 //import { AlbumsService } from './services/albums/albums.service';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -24,6 +25,7 @@ import { FooterLinkComponent } from './components/footer/components/footer-link/
   ],
   providers: [
   AlbumsService,
+  PaginationService
   
   ],
   exports: [
