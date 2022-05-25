@@ -5,27 +5,30 @@
    class="form"
    >
     <div class="field-container">    
+        <label class="field-container__label">Name of Álbum</label>
         <input class="form__input" placeholder="Name" formControlName="name">
         <p 
           *ngIf="!albumForm.get('name')?.valid && albumForm.get('name')?.dirty"
           class="input-error">
-          El Name es requerido
-        </p>
-    </div>
-    <div class="field-container">    
-        <input class="form__input" placeholder="Imagen" formControlName="image">
-        <p 
-           *ngIf="!albumForm.get('image')?.valid && albumForm.get('image')?.dirty"
-           class="input-error"
-           >La imagen es requerida
+          The Name is required
         </p>
     </div>
     <div class="field-container">
+      <label class="field-container__label">Year of Álbum</label>
         <input class="form__input" placeholder="Year" formControlName="year">
         <p 
           *ngIf="!albumForm.get('year')?.valid && albumForm.get('year')?.dirty"
           class="input-error"
           >El año  es requerido
+        </p>
+    </div>
+    <div class="field-container">    
+      <label class="field-container__label">Image of Álbum</label>
+        <input class="form__input" placeholder="Imagen" formControlName="image">
+        <p 
+           *ngIf="!albumForm.get('image')?.valid && albumForm.get('image')?.dirty"
+           class="input-error"
+           >La imagen es requerida
         </p>
     </div>
     <button
