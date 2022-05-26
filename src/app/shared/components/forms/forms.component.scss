@@ -1,10 +1,10 @@
 .form {
-    margin-top: 40px;
-    padding: 24px;
+    //margin-top: 40px;
+    padding: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: white;
+    background-color:#C0C0C0;
     margin-bottom: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -48,7 +48,7 @@
 }
 
 .field-container {
-    display: block;
+    //display: block;
     flex: 45%;
     margin-bottom: 32px;
     margin-top: 32px;

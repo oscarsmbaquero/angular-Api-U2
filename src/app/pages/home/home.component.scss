@@ -5,7 +5,7 @@
     background-color: whitesomke;
 }    
 .section1{
-    
+    //margin-top: 150px;
     color:whitesmoke;
     &__img{
         margin-top:40px;
@@ -32,6 +32,13 @@
     &__p{
         // margin-left:40px;
         text-align: center;
+    }
+    .iframe{
+        
+        align-items: center;
+        display:block;
+        margin:auto;
+        
     }
 }// flex-wrap: wrap;
    
