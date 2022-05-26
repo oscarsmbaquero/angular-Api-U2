@@ -15,6 +15,7 @@
         align-items: center;
         display:block;
         margin:auto;
+        
     }
     &__img:hover{
         transform: rotate(360deg);
@@ -38,6 +39,7 @@
         align-items: center;
         display:block;
         margin:auto;
+        margin-bottom: 50px;
         
     }
 }// flex-wrap: wrap;
