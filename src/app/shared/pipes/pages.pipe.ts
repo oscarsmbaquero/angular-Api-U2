@@ -4,7 +4,7 @@ import { PaginationService } from 'src/app/core/services/pagination.service';
 
 //import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 
-const PageLimit = 5
+const PageLimit = 8;
 
 @Pipe({
   name: 'pages',

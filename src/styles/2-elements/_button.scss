@@ -1,19 +1,45 @@
+// .button {
+//     display: inline-block;    
+//     padding: 8px 12px 8px 12px;
+//     // margin: 12px  2px ;
+//     width: 160px;
+//     border-radius: 35px;
+//     // border: none;
+//     color: white;
+//     background-color: rgb(46, 45, 45);
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-size: 12px;
+//     width: 80px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+//     margin-left: 50%;
+//     transform: translateX(-50%);
+    
+  
+// }
 .button {
     display: inline-block;    
-    padding: 8px 12px 8px 12px;
-    // margin: 12px  2px ;
-    width: 160px;
-    border-radius: 35px;
-    // border: none;
-    color: white;
-    background-color: rgb(46, 45, 45);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    width: 80px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-    margin-left: 50%;
-    transform: translateX(-50%);
-    
-    &__button--delete{
-        background-color: red;
-    }
-}
+        padding: 8px 12px 8px 12px;
+        // margin: 12px  2px ;
+        width: 160px;
+        border-radius: 5px;
+        // border: none;
+        color: lightblue;
+        background-color: rgb(46, 45, 45);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        width: 80px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+        margin-left: 50%;
+        transform: translateX(-50%);
+  }
+  .button:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+  }
+  .button:hover:before {
+  width: 100%;
+  }
