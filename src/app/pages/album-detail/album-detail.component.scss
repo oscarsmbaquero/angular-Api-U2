@@ -9,34 +9,24 @@
     height: 80%;
     margin-left: 100px;
     padding: 40px;
-    
-    //background-color: white;
 
     &__info{
         flex-direction: column;
         margin-left: 60px;
         margin-top:200px;
-        //@function: 100px;
-
       
     }
     .album__image{
-        // margin-left: 500px;
-        // margin-bottom: 200px;
         width: 300px;
         height: 300px;
         margin-top: 100px;
-        //margin-left: 100px;
-        // flex-direction: center;
     }
-
     .album__title{
         font-size: 50px;
     }
     .album__year{
         font-size:45px;
         color:red;
-        //margin-left:100px;
         margin-bottom: 30px;
     }
   

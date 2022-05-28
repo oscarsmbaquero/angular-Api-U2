@@ -33,13 +33,6 @@ export class AlbumsService {
     return this.httpClient.delete<IAlbum>( `${environment.apiUrl}albums/${id}`);
   }
 
-  // public addAlbum( body:IAlbum): Observable<IAlbum> {
-  //   return this.httpClient.post<IAlbum>(
-  //     `${environment.apiUrl}albums`, 
-  //     body
-  //   );
-  // }
-
   public addAlbum(body: IAlbum): Observable<IAlbum> {
     return this.httpClient.post<IAlbum>(
       `${environment.apiUrl}albums`,

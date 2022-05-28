@@ -26,10 +26,10 @@ const routes: Routes = [
     path:"edit-product/:id",
     loadChildren: () => import('src/app/pages/edit-product/edit-product.module').then(m => m.EditProductModule)
    },
-  // {
-  //   path: "**",
-  //   redirectTo:''//redirecciona al home y elimna la ruta erronea del usuario
-  //  },
+  {
+    path: "**",
+    redirectTo:''//redirecciona al home y elimna la ruta erronea del usuario
+   },
 
 ];
 

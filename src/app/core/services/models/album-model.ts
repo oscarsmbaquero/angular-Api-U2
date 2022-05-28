@@ -1,4 +1,4 @@
-//import { IAlbum } from './../../../pages/album-list/models/gallery-models';
+
 export interface IAlbum{
 
     id: string;

@@ -1,24 +1,16 @@
 
 
-<!-- <div class ="album"
-   *ngIf="cd">
-   <img class="album__image"[src]="cd.image">
-   <p class ="album__name">{{cd.name}}</p>
-   <a class ="album__a"[routerLink]="['/detail', cd.id]">Ver más</a>
-</div> -->
 <div class="album"
     *ngIf="cd">
       <img class="album__image"[src]="cd.image" alt="...">
       <div class="album__info">
-          <p class ="album__name">{{cd.name | titlecase}}</p>
-         
+          <p class ="album__name">{{cd.name | titlecase}}</p>         
       </div>
-      
       <div class="buttons">    
           <button class="album__delete"
           *ngIf="cd"
           (click)="onDelete()" class="button">Eliminar</button>
-          <button  class="button"[routerLink]="['/detail', cd.id ]">Ver más</button>
+          <button  class="button"[routerLink]="['/detail', cd.id]">Ver más</button>
           <button  class="button"[routerLink]="['/edit-product', cd.id ]">Edit</button>
       </div>
  </div>

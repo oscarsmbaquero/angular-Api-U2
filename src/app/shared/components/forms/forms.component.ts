@@ -28,10 +28,6 @@ export class FormsComponent implements OnInit {
 
   ngOnInit(): void {
     this.albumForm = this.formBuilder.group({
-      // id: new FormControl(this.album ? this.album.id : '',[Validators.required]),
-      // name: ['',Validators.required],
-      // image: ['',Validators.required],
-      // year: ['',Validators.required],
       name : new FormControl(this.album ? this.album.name : '',[Validators.required]),
       image: new FormControl(this.album ? this.album.image : '',[Validators.required]),
       year: new FormControl(this.album ? this.album.year : '',[Validators.required]),

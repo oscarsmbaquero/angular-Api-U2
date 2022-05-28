@@ -33,11 +33,7 @@ export class AlbumDetailComponent implements OnInit {
 
 
       })
-      //this.currentAlbum$ = this.albumService.getProductById(id);
      
-      
-      // this.currentAlbum = this.album.find(element => element.id === id);
-      // console.log(this.currentAlbum);
 
    }
    )
