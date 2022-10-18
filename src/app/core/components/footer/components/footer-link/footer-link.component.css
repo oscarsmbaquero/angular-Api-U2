@@ -1,0 +1,15 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__image {
+  width: 30px;
+  height: 30px;
+}
+/*# sourceMappingURL=footer-link.component.css.map */

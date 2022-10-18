@@ -13,7 +13,8 @@
     &__name{
         margin-bottom: 8px;
         text-align: center;
-        color:lightblue;
+        color:white;
+        font-size: 25px;
     }
     &__info {
         padding: 8px;
@@ -35,9 +36,28 @@
         justify-content: center;
         text-decoration: none;  
         color:lightblue;
-    }
+    } 
+}
 
-  
-
+.buttons{
+    display: flex;
+    margin-left: 20px;
  
+    
+    &__button{
+        border-radius: 8px;
+        width: 60px;
+        height: 30px;
+        color:aliceblue
+
+    }
+    :first-child {
+        background-color: red;
+    }
+    :nth-child(2) { //the benefit of this is you can do it for 2nd, 3rd etc...
+        background-color: green;
+    }
+    :last-child {
+        background-color: orange;
+    }
 }

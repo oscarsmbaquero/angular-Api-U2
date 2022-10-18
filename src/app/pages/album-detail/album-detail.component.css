@@ -1,0 +1,43 @@
+.album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: aliceblue;
+  width: 80%;
+  height: 80%;
+  margin-left: 100px;
+  padding: 40px;
+}
+
+.album__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 60px;
+  margin-top: 200px;
+}
+
+.album .album__image {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.album .album__title {
+  font-size: 50px;
+}
+
+.album .album__year {
+  font-size: 45px;
+  color: red;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=album-detail.component.css.map */

@@ -7,11 +7,11 @@
           <p class ="album__name">{{cd.name | titlecase}}</p>         
       </div>
       <div class="buttons">    
-          <button class="album__delete"
+          <button class="buttons__button"
           *ngIf="cd"
-          (click)="onDelete()" class="button">Eliminar</button>
-          <button  class="button"[routerLink]="['/detail', cd.id]">Ver más</button>
-          <button  class="button"[routerLink]="['/edit-product', cd.id ]">Edit</button>
+          (click)="onDelete()" class="buttons__button">Eliminar</button>
+          <button  class="buttons__button"[routerLink]="['/detail', cd.id]">Ver más</button>
+          <button  class="buttons__button"[routerLink]="['/edit-product', cd.id ]">Edit</button>
       </div>
  </div>
 
